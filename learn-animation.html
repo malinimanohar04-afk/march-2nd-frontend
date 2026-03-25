@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Animation</title>
+    <style>
+      .one {
+        height: 400px;
+        width: 400px;
+        background-color: yellow;
+        font-size: 200px;
+        text-align: center;
+        animation-name: hello;
+        animation-duration: 4s;
+        position: relative;
+      }
+      /* @keyframes hello {
+        from {
+          background-color: blueviolet;
+        }
+        to {
+          background-color: red;
+        }
+      } */
+      @keyframes hello {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        /* percentage is calculated based on the duration of animation mentioned in css */
+        25% {
+          top: 0px;
+          left: 200px;
+        }
+        50% {
+          top: 200px;
+          left: 200px;
+        }
+        75% {
+          top: 200px;
+          left: 0px;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">1</div>
+  </body>
+</html>
